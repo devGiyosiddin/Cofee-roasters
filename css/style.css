@@ -1,3 +1,40 @@
+/* CUSTOM PROPS */
+:root{
+  --text-color: #333;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 /* GLOBAL STYLES */
 html {
   box-sizing: border-box;
@@ -15,35 +52,71 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Arial";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   color: #222;
   padding: 0;
   margin: 0;
-  background-color: #fff;
+  background-color: var(--text-color);
 }
 
-img {
-  min-width: 100%;
-  height: auto;
-}
-
-/* CONTAINER */
-.container{
-  width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+ 
+ 
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
 }
 
-.content{
-  flex-grow: 1;
+
+.site-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 40px;
+}
+
+.site-header-logo-link {
+  display: inline-block;
+  width: 235px;
+  height: 24px;
+}
+
+.site-header-logo {
+}
+
+.site-header-navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.site-header-navbar-item {
+  text-transform: uppercase;
+}
+
+  .site-header-navbar-item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-header-company-logo-img {
+  width: 160px;
+  height: 160px;
+  position: center;
+  
+}
+.site-header-box {
+}
+.site-header-box-header {
+}
+.site-header-box-text {
+}
+.site-header-box-link {
+}
+.site-header-img {
 }
