@@ -8,6 +8,7 @@
   --button-brown: #C99B67;
   --button-brown-60: rgba(201, 155, 103, 0.6);
   --button-brown-80: rgba(201, 155, 103, 0.8);
+  --light-bg: #f8f8f2;
 }
 
 /* FONTS */
@@ -68,7 +69,7 @@ body {
 }
 
 img{
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
 }
 
@@ -90,21 +91,22 @@ img{
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 
 /* HEADER */
 .site-header {
   display: block;
-  height: 800px;
+  position: relative;
+  height: 820px;
   background: #F3D7B7;
   padding-top: 30px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.site-header-container {
-}
 .site-header-top {
   display: flex;
   align-items: center;
@@ -168,27 +170,14 @@ img{
   opacity: 0.7;
 }
 
- .site-header:before { 
+.site-header:before { 
   content:url("../img/company-logo.png");
   position: absolute;
-  display: block;
-  margin: 0 687px;
+  left: 50%;
+  margin-top: 10px;
+  margin-left: -45px;
+  z-index: 1;
 }
-/*
-.site-header:after { 
-  content:url("../img/coffee-on-hand.jpg");
-  position: relative;
-  top: -450px;
-  left: auto;
-  right: -810px;
-} */
-
-/* .hero {
-  width: 464px;
-  height: 331px;
-  display: inline-block;
-  margin: 156px 0 0 130px;
-} */
 
 .hero-container {
   display: flex;
@@ -269,4 +258,81 @@ img{
   top: 35px;
   right: -370px;
   left: 185px;
+}
+
+
+/* INDEX-COLLECTION */
+.index-collection-inner{
+  padding: 50px 143px;
+  background-color: var(--light-bg);
+  /* background-image: url("../img/index-collection-bg.jpg"); */
+}
+
+.index-collection-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 50px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.index-collection-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+.index-collection-item:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.index-collection-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+}
+
+.index-collection-info {
+  flex-grow: 1;
+  padding: 0 117px;
+}
+
+.index-collection-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.index-collection-text {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: normal;
+}
+.index-collection-text:not(:last-child){
+  margin-bottom: 10px;
+}
+
+
+/* RETINA-IMG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .index-collection-inner{
+    background-image: url("../img/index-collection-bg@2x.jpg")  
+  }
 }
