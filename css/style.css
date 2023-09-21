@@ -292,7 +292,7 @@ img{
 }
 
 
-/* INDEX-COLLECTION */
+/* index-COLLECTION */
 .index-collection{
   width: 100%;
   margin-bottom: 20px;
@@ -375,7 +375,7 @@ img{
 }
 
 
-/* INDEX-FEATURES */
+/* index-FEATURES */
 .index-features{
   margin-bottom: 30px;
 }
@@ -525,8 +525,8 @@ img{
   counter-increment: how-it-works;
 }
 .howitworks-item::before{
-  display: inline-block;
   position: absolute;
+  display: inline-block;
   width: 60px;
   height: 60px;
   margin-left: 20px;
@@ -535,7 +535,8 @@ img{
   text-align: right;
   border: 4px solid var(--button-brown);
   background-color: var(--light-bg);
-  content: ""; 
+  content: "";
+  font-size: 50px;
 }
 
 .howitworks-inner-hr{
@@ -553,23 +554,29 @@ img{
   height: 396px;
   flex-shrink: 0;
   margin: 80px 20px;
-  /* margin-top: 550px; */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 40px;
-  padding: 20px/*  20px 40px */;
+  padding: 20px;
   background-color: var(--light-bg);
 }
-.howitworks-info::before{
+.howitworks-item-info::before{
   margin-bottom: 45px;
-  font-style: 64px;
+  font-size: 64px;
   line-height: normal;
   align-self: flex-end;
   content: "0" counter(how-it-works);
-}
   
+  color: #333;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-variant: all-small-caps;
+}
+
 .howitworks-title {
+  margin: 0 0 10px;
   width: 231px;
   color: #333;
   font-size: 40px;
@@ -589,6 +596,156 @@ img{
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+
+/* ABOUT-US */
+.pg_2-index-collection {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pg_2-index-collection-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1480px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: lightgray;
+}
+
+.pg_2-index-collection-inner {
+  padding-top: 180px;
+  padding-bottom: 200px;
+  display: flex;
+  width: 1480px;
+  padding: 50px 143px;
+  align-items: center;
+  background-color: var(--light-bg);
+  background-image: url("../img/leaf_1.png"), url("../img/index-collection-bg-img.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: 0 20px,  center;
+}
+
+.pg_2-index-collection-img {
+  margin: 100px 185px 0 50px;
+}
+
+.pg_2-index-collection-info {
+
+}
+
+.pg_2-index-collection-info-title {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: all-small-caps;
+  margin-bottom: 24px;
+}
+
+.pg_2-index-collection-info-text {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+/* Index-features */
+.pg2_index-features {
+  width: 100%;
+  height: 510px;
+  margin-left: 20px;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.pg2_index-features-container {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  
+  padding: 100px 143px 118px;
+  background-image: url("../img/index-features-bg-img@2x.jpg");
+  background-size: auto 700px;
+  background-repeat: no-repeat;
+}
+
+.pg2_index-features-inner {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.pg_2-index-features-info {
+  display: inline-block;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.pg_2-index-features-info-title {
+  width: 397px;
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: all-small-caps;
+}
+
+.pg_2-index-features-info-text {
+  width: 639px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.pg_2-index-features-img {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: -180px;
+  /* margin-left: 670px; 
+  
+  */
+}
+
+/* OUR-HEADQUARTERSA */
+.our-headquarters-inner {
+  position: relative;
+  padding: 50px 30px;
+  background-color: var(--accent-color-green);
+  background-image: url("../img/howitworks-bg-img.jpg"), url("../img/coffee-first-sticker.png");
+  background-repeat: no-repeat,repeat;
+  background-position: 60px right, center center;
+  text-align: center;
+  background-size: auto 826px;
+}
+
+.our-headquarters-item {
+  width: 433px;
+  width: calc(100% /3 - 20px);
+  height: 396px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 20px;
+  margin-left: -20px;
+  width:calc(100% /3 -20px);
+  background-color: var(--light-bg);
+  background-color: var(--accent-color-green);
+  background-color: var(--accent-color-green);
+  background-image: url("../img/howitworks-bg-img.jpg"), url("../img/coffee-first-sticker.png");
+  background-repeat: no-repeat,repeat;
 }
 
 
@@ -618,10 +775,13 @@ img{
 .site-footer-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .site-footer-link {
 }
+
 .site-footer-link-img {
 }
+
 .site-footer-link {
 }
 
