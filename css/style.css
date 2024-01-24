@@ -516,9 +516,6 @@ img{
   position: relative;
   margin-right: 20px;
   margin-left: -20px;
-  width:calc(100% /3 -20px);
-  /* background-color: var(--light-bg); */
-  /* background-color: var(--accent-color-green); */
   background-color: var(--accent-color-green);
   background-image: url("../img/howitworks-bg-img.jpg"), url("../img/coffee-first-sticker.png");
   background-repeat: no-repeat,repeat;
