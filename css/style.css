@@ -462,9 +462,6 @@ img{
 
 
 /* HOW-IT-WORKS */
-.howitworks {
-}
-
 .howitworks-inner {
   position: relative;
   padding: 50px 30px;
@@ -543,7 +540,6 @@ img{
   width: 899px;
   z-index: 1;
   border: 2px dashed #C99B67;
-  
 }
   
 .howitworks-item-info {
@@ -563,7 +559,6 @@ img{
   line-height: normal;
   align-self: flex-end;
   content: "0" counter(how-it-works);
-  
   color: #333;
   font-size: 64px;
   font-style: normal;
@@ -597,12 +592,14 @@ img{
 
 
 /* ABOUT-US */
-.pg_2-index-collection {
-  width: 100%;
-  margin-bottom: 20px;
+.about-us__site-header .hero-text {
+  width: 372px;
 }
 
-.pg_2-index-collection-container {
+/* INDEX-COLLECTION */
+.as-index-collection {
+  margin-bottom: 160px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,38 +609,38 @@ img{
   background-color: lightgray;
 }
 
-.pg_2-index-collection-inner {
-  padding-top: 180px;
-  padding-bottom: 200px;
+.as-index-collection-inner {
+  padding: 160px 65px 200px 165px;
   display: flex;
   width: 1480px;
-  padding: 50px 143px;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--light-bg);
   background-image: url("../img/leaf_1.png"), url("../img/index-collection-bg-img.jpg");
   background-repeat: no-repeat, repeat;
   background-position: 0 20px,  center;
 }
 
-.pg_2-index-collection-img {
+.as-index-collection-img {
   margin: 100px 185px 0 50px;
 }
 
-.pg_2-index-collection-info {
-
+.as-index-collection-info {
+  max-width: 626px;
 }
 
-.pg_2-index-collection-info-title {
+.as-index-collection-info-title {
+  margin-top: 0;
+  margin-bottom: 24px;
   color: #000;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   font-variant: all-small-caps;
-  margin-bottom: 24px;
 }
 
-.pg_2-index-collection-info-text {
+.as-index-collection-info-text {
+  margin-top: 0;
   color: #333;
   font-size: 18px;
   font-style: normal;
@@ -653,40 +650,23 @@ img{
 
 
 /* Index-features */
-.pg2_index-features {
+.as-index-features {
   width: 100%;
   height: 510px;
-  margin-left: 20px;
-  margin-top: 160px;
-  margin-bottom: 100px;
-}
-
-.pg2_index-features-container {
-  width: 100%;
   max-width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  
-  padding: 100px 143px 118px;
-  background-image: url("../img/index-features-bg-img@2x.jpg");
-  background-size: auto 700px;
-  background-repeat: no-repeat;
-}
-
-.pg2_index-features-inner {
   display: flex;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  padding: 100px 143px 118px;
+  background-color: #c99b67;
 }
 
-.pg_2-index-features-info {
-  display: inline-block;
+.as-index-features-info {
+  max-width: 640px;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 38px;
 }
 
-.pg_2-index-features-info-title {
+.as-index-features-info-title {
   width: 397px;
   color: #FFF;
   font-size: 50px;
@@ -694,55 +674,97 @@ img{
   font-weight: 700;
   line-height: normal;
   font-variant: all-small-caps;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.pg_2-index-features-info-text {
+.as-index-features-info-text {
   width: 639px;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.pg_2-index-features-img {
-  position: relative;
+.as-index-features-img {
   width: 550px;
   height: 500px;
-  object-fit: cover;
   margin-top: -180px;
-  /* margin-left: 670px; 
-  
-  */
 }
+
 
 /* OUR-HEADQUARTERSA */
-.our-headquarters-inner {
-  position: relative;
-  padding: 50px 30px;
+.about-us__our-hq {
+  width: 100%;
+  padding: 50px 30px 100px;
   background-color: var(--accent-color-green);
-  background-image: url("../img/howitworks-bg-img.jpg"), url("../img/coffee-first-sticker.png");
-  background-repeat: no-repeat,repeat;
-  background-position: 60px right, center center;
+}
+.our-hq__header {
+  margin: 0 0 80px;
+  color: #fff;
   text-align: center;
-  background-size: auto 826px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-variant: all-small-caps;
 }
 
-.our-headquarters-item {
+.our-hq__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.our-hq__item {
+  position: relative;
   width: 433px;
-  width: calc(100% /3 - 20px);
   height: 396px;
   display: flex;
+  justify-content: end;
   flex-direction: column;
-  position: relative;
-  margin-right: 20px;
-  margin-left: -20px;
-  width:calc(100% /3 -20px);
-  background-color: var(--light-bg);
-  background-color: var(--accent-color-green);
-  background-color: var(--accent-color-green);
-  background-image: url("../img/howitworks-bg-img.jpg"), url("../img/coffee-first-sticker.png");
-  background-repeat: no-repeat,repeat;
+  background-color: #f8f8f2;
+  padding: 40px 20px;
+}
+
+.our-hq__item-info {
+  max-width: 231px;
+}
+
+.our-hq__title {
+  margin: 0 0 10px;
+  width: 231px;
+  color: #333;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-variant: all-small-caps;
+}
+.our-hq__text {
+  margin-top: 0;
+  width: 385px;
+  height: 112px;
+  flex-shrink: 0;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.our-hq__item-img {
+  position: absolute;
+  top: 45px;
+  right: 55px;
+
 }
 
 
