@@ -795,10 +795,14 @@ img{
   margin-right: 30px;
 }
 
-.site-footer-link:hover {
+.site-footer-link:hover .site-footer-link-icon {
+  display: block;
+  color: var(--accent-color-green);
 }
 
-.site-footer-link-img {
+.site-footer-link-icon {
+  color: #333;
+  transition: 0.3s ease;
 }
 
 .site-footer-link {
