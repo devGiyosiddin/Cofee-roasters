@@ -593,7 +593,7 @@ img{
 
 /* ABOUT-US */
 .about-us__site-header .hero-text {
-  width: 372px;
+  max-width: 372px;
 }
 
 /* INDEX-COLLECTION */
@@ -765,6 +765,16 @@ img{
   top: 45px;
   right: 55px;
 
+}
+
+
+/* CREATE-PLAN */
+.create-plan__site-header .hero-text {
+  max-width: 372px;
+}
+
+.howitworks-inner::before {
+  content: "";
 }
 
 
