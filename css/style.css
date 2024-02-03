@@ -851,6 +851,7 @@ img{
 
 .cp-accordions__item-span {
   margin-left: 44px;
+  transition: 0.3s ease;
 }
 
 .cp-accordions__item-span__icon {
@@ -893,12 +894,12 @@ img{
   background-color: var(--accent-color-green);
 }
 
-.cp-accordions__item-input:checked + .cp-accordions__panel-list {
+.cp-accordions__item-input:checked ~ .cp-accordions__panel-list {
   max-height: 220px;
   margin-top: 20px;
 }
-.cp-accordions__item-input:checked + .cp-accordions__item-span__icon {
-  transform: rotate(0deg);
+.cp-accordions__item-input:checked + .cp-accordions__item-label .cp-accordions__item-span {
+  transform: rotate(90deg);
 }
 
 .cp-accordion__panel-item__title {
