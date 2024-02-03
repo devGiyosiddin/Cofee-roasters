@@ -884,7 +884,7 @@ img{
   background-color: rgba(10, 119, 95, 0.2);
 }
 
-.cp-accordions__panel-item:not(:last-child) {
+.cp-accordions__item:not(:last-child) {
   margin-bottom: 60px;
 }
 
