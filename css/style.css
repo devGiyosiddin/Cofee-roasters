@@ -928,11 +928,6 @@ img{
 .site-footer-inner{
   width: 1440px;
   height: 160px;
-  flex-shrink: 0;
-  margin-right:auto;
-  margin-left:auto; 
-  padding-top: 50px;
-  padding-right: 50px;
 }
 
 .site-footer-list {
