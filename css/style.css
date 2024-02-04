@@ -777,8 +777,13 @@ img{
 .cp-main-content .howitworks-inner::before {
   content: "";
 }
+
 .cp-main-content .howitworks {
   margin-bottom: 20px;
+}
+
+.cp-main-content .index-collection-inner {
+  background-position: -60px 800px, 1245px 175px,0 0, center ;
 }
 
 
@@ -821,6 +826,11 @@ img{
 
 
 /* CP - ACCORDION */
+.cp-features__accordion-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .cp-main-content .index-collection-inner {
   align-items: start;
   padding: 50px 30px 121px;
@@ -832,7 +842,7 @@ img{
   padding: 0;
   margin: 0;
   margin-right: 114px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 .cp-accordions__item {
   width: 100%;
@@ -951,7 +961,7 @@ img{
 
 .site-footer-link-icon {
   color: #333;
-  transition: 0.3s ease;
+  transition: display 0.3s ease;
 }
 
 .site-footer-link {
