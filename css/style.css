@@ -132,7 +132,7 @@ img{
   margin-top: 60px;
 }
 
-.order-summary_buttton {
+.order-summary-buttton {
   max-width: 175px;
   margin-left: auto;
 }
@@ -663,7 +663,7 @@ img{
 
 
 /* ABOUT-US */
-.about-us__site-header .hero-text {
+.about-us-site-header .hero-text {
   max-width: 372px;
 }
 
@@ -768,12 +768,12 @@ img{
 
 
 /* OUR-HEADQUARTERSA */
-.about-us__our-hq {
+.about-us-our-hq {
   width: 100%;
   padding: 50px 30px 100px;
   background-color: var(--accent-color-green);
 }
-.our-hq__header {
+.our-hq-header {
   margin: 0 0 80px;
   color: #fff;
   text-align: center;
@@ -785,7 +785,7 @@ img{
   font-variant: all-small-caps;
 }
 
-.our-hq__list {
+.our-hq-list {
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -794,7 +794,7 @@ img{
   margin: 0;
 }
 
-.our-hq__item {
+.our-hq-item {
   position: relative;
   width: 433px;
   height: 396px;
@@ -805,11 +805,11 @@ img{
   padding: 40px 20px;
 }
 
-.our-hq__item-info {
+.our-hq-item-info {
   max-width: 231px;
 }
 
-.our-hq__title {
+.our-hq-title {
   margin: 0 0 10px;
   width: 231px;
   color: #333;
@@ -819,7 +819,7 @@ img{
   line-height: normal;
   font-variant: all-small-caps;
 }
-.our-hq__text {
+.our-hq-text {
   margin-top: 0;
   width: 385px;
   height: 112px;
@@ -831,7 +831,7 @@ img{
   line-height: 28px;
 }
 
-.our-hq__item-img {
+.our-hq-item-img {
   position: absolute;
   top: 45px;
   right: 55px;
@@ -840,7 +840,7 @@ img{
 
 
 /* CREATE-PLAN */
-.create-plan__site-header .hero-text {
+.create-plan-site-header .hero-text {
   max-width: 372px;
 }
 
@@ -934,7 +934,7 @@ img{
   transition: 0.3s ease;
 }
 
-.cp-accordions__item-span__icon {
+.cp-accordions__item-span-icon {
   display: block;
   width: 18px;
   height: 11px;
@@ -982,13 +982,13 @@ img{
   transform: rotate(90deg);
 }
 
-.cp-accordion__panel-item__title {
+.cp-accordion__panel-item-title {
   font-weight: 500;
   font-size: 24px;
   font-variant: all-small-caps;
   margin: 0 0 10px;
 }
-.cp-accordion__panel-item__description {
+.cp-accordion__panel-item-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;

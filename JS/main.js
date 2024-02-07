@@ -1,6 +1,6 @@
 'use strict';
 const elModal = document.querySelector('.os-modal');
-const elButoon = document.querySelector('.order-summary_buttton');
+const elButoon = document.querySelector('.order-summary-buttton');
 if (elButoon) {
     elButoon.addEventListener('click', function () {
          elModal.classList.add('os-modal--open')
