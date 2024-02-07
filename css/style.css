@@ -150,10 +150,10 @@ img{
 
 
 /* MODAL */
-.os-modal__open {
+.os-modal--open {
   position: fixed;
 }
-.os-modal__open .os-modal__wrapper {
+.os-modal--open .os-modal__wrapper {
   display: block;
 }
 
@@ -222,10 +222,6 @@ img{
   font-size: 24px;
   margin: 0;
 }
-
-.os-modal__button {
-}
-
 
  
 /* MAIN-CONTENT */
