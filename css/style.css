@@ -134,6 +134,7 @@ img{
 
 .order-summary_buttton {
   max-width: 175px;
+  margin-left: auto;
 }
 
 
@@ -822,6 +823,7 @@ img{
 .cp-features__accordion-inner {
   display: flex;
   flex-direction: column;
+  padding-right: 114px;
 }
 
 .cp-main-content .index-collection-inner {
@@ -834,7 +836,6 @@ img{
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 114px;
   margin-bottom: 100px;
 }
 .cp-accordions__item {
