@@ -963,15 +963,11 @@ img{
   height: 220px;
   padding: 30px 16px;
   background-color: rgba(10, 119, 95, 0.2);
+  cursor: pointer;
 }
 
 .cp-accordions-item:not(:last-child) {
   margin-bottom: 60px;
-}
-
-.cp-accordions-panel-item--active {
-  color: #fff;
-  background-color: var(--accent-color-green);
 }
 
 .cp-accordions-item-input:checked ~ .cp-accordions-panel-list {
@@ -982,6 +978,13 @@ img{
   transform: rotate(90deg);
 }
 
+.cp-accordions-item-input-in-input {
+  display: none;
+}
+.cp-accordions-item-input-in-input:checked + .cp-accordions-panel-item {
+  color: #fff;
+  background-color: var(--accent-color-green);
+}
 .cp-accordion-panel-item-title {
   font-weight: 500;
   font-size: 24px;

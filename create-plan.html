@@ -12,9 +12,9 @@
     <link rel="site icon" href="img/coffee-icon.svg">
 
     <!-- STYLES -->
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/min.style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/min.style.css"> -->
 </head>
 <body>
     <!-- SITE-HEADER -->
@@ -122,20 +122,24 @@
                                             <svg class="cp-accordions-item-span-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="11" fill="none"><path fill="#333" d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z"/></svg>
                                         </span>
                                     </label>
-                                    <ul class="cp-accordions-panel-list">
-                                        <li class="cp-accordions-panel-item">
+                                    <div class="cp-accordions-panel-list">    
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-first" id="first-1">
+                                        <label class="cp-accordions-panel-item" for="first-1">
+                                            
                                             <h3 class="cp-accordion-panel-item-title">Capsule</h3>
-                                            <p class="cp-accordion-panel-item-description">Compatible with Nespresso systems and similar brewers</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item cp-accordions-panel-item--active">
+                                                <p class="cp-accordion-panel-item-description">Compatible with Nespresso systems and similar brewers</p>
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-first" id="first-2" checked>
+                                        <label class="cp-accordions-panel-item" for="first-2">
                                             <h3 class="cp-accordion-panel-item-title">Filter</h3>
-                                            <p class="cp-accordion-panel-item-description">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                                <p class="cp-accordion-panel-item-description">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-first" id="first-3">
+                                        <label class="cp-accordions-panel-item" for="first-3">
                                             <h3 class="cp-accordion-panel-item-title">Espresso</h3>
-                                            <p class="cp-accordion-panel-item-description">Dense and finely ground beans for an intense, flavorful experience</p>
-                                        </li>
-                                    </ul>
+                                                <p class="cp-accordion-panel-item-description">Dense and finely ground beans for an intense, flavorful experience</p>
+                                        </label>
+                                    </div>
                                 </li>
                                 <li class="cp-accordions-item">
                                     <input class="cp-accordions-item-input" type="radio" name="accordion" id="second">
@@ -144,20 +148,25 @@
                                             <svg class="cp-accordions-item-span-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="11" fill="none"><path fill="#333" d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z"/></svg>
                                         </span>
                                     </label>
-                                    <ul class="cp-accordions-panel-list">
-                                        <li class="cp-accordions-panel-item">
+
+                                    <div class="cp-accordions-panel-list">    
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-second" id="second-1">
+                                        <label class="cp-accordions-panel-item" for="second-1">
                                             <h3 class="cp-accordion-panel-item-title">Single Origin</h3>
                                             <p class="cp-accordion-panel-item-description">Distinct, high quality coffee from a specific family-owned farm</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item cp-accordions-panel-item--active">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-second" id="second-2" checked>
+                                        <label class="cp-accordions-panel-item" for="second-2">
                                             <h3 class="cp-accordion-panel-item-title">Decaf</h3>
                                             <p class="cp-accordion-panel-item-description">Just like regular coffee, except the caffeine has been removed</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-second" id="second-3">
+                                        <label class="cp-accordions-panel-item" for="second-3">
                                             <h3 class="cp-accordion-panel-item-title">Blended</h3>
                                             <p class="cp-accordion-panel-item-description">Combination of two or three dark roasted beans of organic coffees</p>
-                                        </li>
-                                    </ul>
+                                        </label>
+                                    </div>
+                                    
                                 </li>
                                 <li class="cp-accordions-item">
                                     <input class="cp-accordions-item-input" type="radio" name="accordion" id="third">
@@ -166,20 +175,23 @@
                                             <svg class="cp-accordions-item-span-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="11" fill="none"><path fill="#333" d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z"/></svg>
                                         </span>
                                     </label>
-                                    <ul class="cp-accordions-panel-list">
-                                        <li class="cp-accordions-panel-item cp-accordions-panel-item--active">
+                                    <div class="cp-accordions-panel-list">    
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-third" id="third-1">
+                                        <label class="cp-accordions-panel-item" for="third-1">
                                             <h3 class="cp-accordion-panel-item-title">250g</h3>
                                             <p class="cp-accordion-panel-item-description">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-third" id="third-2" checked>
+                                        <label class="cp-accordions-panel-item" for="third-2">
                                             <h3 class="cp-accordion-panel-item-title">500g</h3>
                                             <p class="cp-accordion-panel-item-description">Perfect option for a couple. Yields about 40 delectable cups.</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-third" id="third-3">
+                                        <label class="cp-accordions-panel-item" for="third-3">
                                             <h3 class="cp-accordion-panel-item-title">1000g</h3>
                                             <p class="cp-accordion-panel-item-description">Perfect for offices and events. Yields about 90 delightful cups.</p>
-                                        </li>
-                                    </ul>
+                                        </label>
+                                    </div>
                                 </li>
                                 <li class="cp-accordions-item">
                                     <input class="cp-accordions-item-input" type="radio" name="accordion" id="fourth">
@@ -188,42 +200,48 @@
                                             <svg class="cp-accordions-item-span-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="11" fill="none"><path fill="#333" d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z"/></svg>
                                         </span>
                                     </label>
-                                    <ul class="cp-accordions-panel-list">
-                                        <li class="cp-accordions-panel-item">
+                                    <div class="cp-accordions-panel-list">    
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fourth" id="fourth-1">
+                                        <label class="cp-accordions-panel-item" for="fourth-1">
                                             <h3 class="cp-accordion-panel-item-title">Wholebean</h3>
                                             <p class="cp-accordion-panel-item-description">Best choice if you cherish the full sensory experience</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fourth" id="fourth-2" checked>
+                                        <label class="cp-accordions-panel-item" for="fourth-2">
                                             <h3 class="cp-accordion-panel-item-title">Filter</h3>
                                             <p class="cp-accordion-panel-item-description">For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item cp-accordions-panel-item--active">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fourth" id="fourth-3">
+                                        <label class="cp-accordions-panel-item" for="fourth-3">
                                             <h3 class="cp-accordion-panel-item-title">Cafetiére</h3>
                                             <p class="cp-accordion-panel-item-description">Course ground beans specially suited for french press coffee</p>
-                                        </li>
-                                    </ul>
+                                        </label>
+                                    </div>
                                 </li>
                                 <li class="cp-accordions-item">
-                                    <input class="cp-accordions-item-input" type="radio" name="accordion" id="fiveth">
-                                    <label class="cp-accordions-item-label" for="fiveth">How often should we deliver?
+                                    <input class="cp-accordions-item-input" type="radio" name="accordion" id="fifth">
+                                    <label class="cp-accordions-item-label" for="fifth">How often should we deliver?
                                         <span class="cp-accordions-item-span">
                                             <svg class="cp-accordions-item-span-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="11" fill="none"><path fill="#333" d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z"/></svg>
                                         </span>
                                     </label>
-                                    <ul class="cp-accordions-panel-list">
-                                        <li class="cp-accordions-panel-item cp-accordions-panel-item--active">
+                                    <div class="cp-accordions-panel-list">    
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fifth" id="fifth-1">
+                                        <label class="cp-accordions-panel-item" for="fifth-1">
                                             <h3 class="cp-accordion-panel-item-title">Every week</h3>
                                             <p class="cp-accordion-panel-item-description">$7.20 per shipment. Includes free first-class shipping.</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fifth" id="fifth-2" checked>
+                                        <label class="cp-accordions-panel-item" for="fifth-2">
                                             <h3 class="cp-accordion-panel-item-title">Every 2 weeks</h3>
                                             <p class="cp-accordion-panel-item-description">$9.60 per shipment. Includes free priority shipping.</p>
-                                        </li>
-                                        <li class="cp-accordions-panel-item">
+                                        </label>
+                                        <input class="cp-accordions-item-input-in-input" type="radio" name="accordion-fifth" id="fifth-3">
+                                        <label class="cp-accordions-panel-item" for="fifth-3">
                                             <h3 class="cp-accordion-panel-item-title">Every month</h3>
                                             <p class="cp-accordion-panel-item-description">$12.00 per shipment. Includes free priority shipping.</p>
-                                        </li>
-                                    </ul>
+                                        </label>
+                                    </div>
                                 </li>
                             </ul>
 
